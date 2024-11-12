@@ -1,0 +1,11 @@
+<section class="car" [routerLink]="['details', carLocation.id]">
+  <img
+    class="car-photo"
+    [src]="carLocation.photo"
+    alt="Exterior photo of {{ carLocation.brand }}"
+  />
+  <h2 class="car-heading">{{ carLocation.brand }}</h2>
+  <p class="car-location">{{ carLocation.city }}, {{ carLocation.state }}</p>
+  <p class="car-model">Model: {{ carLocation.model }}</p>
+  <a [routerLink]="['details', carLocation.id]">Learn More</a>
+</section>
